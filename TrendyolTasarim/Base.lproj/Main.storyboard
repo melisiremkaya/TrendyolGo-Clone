@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="foG-kh-c8I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrendyolTasarim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Restoran, ürün veya mutfak ara" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-ED-p9N">
+                                <rect key="frame" x="10" y="98" width="394" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restoranlar (6)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrz-88-lSw">
+                                <rect key="frame" x="15" y="164" width="142.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="260" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bEf-fS-Dpb">
+                                <rect key="frame" x="0.0" y="198" width="414" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yemekHucre" rowHeight="260" id="rDG-Zv-bor" customClass="YemekTableViewCell" customModule="TrendyolTasarim" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rDG-Zv-bor" id="hd5-Mw-oow">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-9e-h4N">
+                                                    <rect key="frame" x="20" y="11" width="374" height="238"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cigkofte" translatesAutoresizingMaskIntoConstraints="NO" id="qT6-aA-bEq">
+                                                            <rect key="frame" x="2" y="0.0" width="370" height="180"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="TU7-CW-Re2"/>
+                                                                <constraint firstAttribute="width" constant="370" id="fmE-7F-Lxv"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OMm-HK-PD4">
+                                                            <rect key="frame" x="5" y="185" width="227.5" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gazi Çiğköfte (Şükrüpaşa)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mn-L8-H2z">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="214" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20-30 dk - 1.3 km - Çiğköfte - Min. 25 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjs-SA-jrL">
+                                                                    <rect key="frame" x="0.0" y="25.5" width="227.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="OMm-HK-PD4" firstAttribute="leading" secondItem="Eda-9e-h4N" secondAttribute="leading" constant="5" id="Wtm-I6-ZUV"/>
+                                                        <constraint firstItem="OMm-HK-PD4" firstAttribute="top" secondItem="qT6-aA-bEq" secondAttribute="bottom" constant="5" id="d5T-2f-Xz5"/>
+                                                        <constraint firstItem="qT6-aA-bEq" firstAttribute="top" secondItem="Eda-9e-h4N" secondAttribute="top" id="o47-VI-kle"/>
+                                                        <constraint firstItem="qT6-aA-bEq" firstAttribute="centerX" secondItem="Eda-9e-h4N" secondAttribute="centerX" id="pC8-6Y-B3I"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Eda-9e-h4N" firstAttribute="leading" secondItem="hd5-Mw-oow" secondAttribute="leadingMargin" id="MrG-fV-Tb0"/>
+                                                <constraint firstItem="Eda-9e-h4N" firstAttribute="trailing" secondItem="hd5-Mw-oow" secondAttribute="trailingMargin" id="NQM-7w-6Ba"/>
+                                                <constraint firstItem="Eda-9e-h4N" firstAttribute="bottom" secondItem="hd5-Mw-oow" secondAttribute="bottomMargin" id="UNF-8l-evZ"/>
+                                                <constraint firstItem="Eda-9e-h4N" firstAttribute="top" secondItem="hd5-Mw-oow" secondAttribute="topMargin" id="rwT-y1-sBe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hucreArkaplan" destination="Eda-9e-h4N" id="KI4-RE-kG7"/>
+                                            <outlet property="yemekAdLabel" destination="5Mn-L8-H2z" id="kyp-9L-CZ3"/>
+                                            <outlet property="yemekBilgiLabel" destination="gjs-SA-jrL" id="E8S-xB-uYG"/>
+                                            <outlet property="yemekResimImageView" destination="qT6-aA-bEq" id="eQM-6r-E59"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLn-ac-TjB">
+                                <rect key="frame" x="331" y="161" width="68" height="31"/>
+                                <color key="tintColor" name="anaRenk"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Filtrele"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bEf-fS-Dpb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6UI-EI-3q6"/>
+                            <constraint firstItem="bEf-fS-Dpb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bqi-hH-9gO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLn-ac-TjB" secondAttribute="trailing" constant="15" id="YZy-Dk-avp"/>
+                            <constraint firstItem="lrz-88-lSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fWX-OV-6bK"/>
+                            <constraint firstItem="lrz-88-lSw" firstAttribute="top" secondItem="Ug5-ED-p9N" secondAttribute="bottom" constant="15" id="gCf-kp-hAy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ug5-ED-p9N" secondAttribute="trailing" constant="10" id="hfW-Uu-vYa"/>
+                            <constraint firstItem="ZLn-ac-TjB" firstAttribute="top" secondItem="Ug5-ED-p9N" secondAttribute="bottom" constant="12" id="iVt-mB-0kk"/>
+                            <constraint firstItem="Ug5-ED-p9N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pD8-ls-hEw"/>
+                            <constraint firstItem="Ug5-ED-p9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="tbx-3h-EZO"/>
+                            <constraint firstItem="bEf-fS-Dpb" firstAttribute="top" secondItem="lrz-88-lSw" secondAttribute="bottom" constant="10" id="utL-hu-HpL"/>
+                            <constraint firstItem="bEf-fS-Dpb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zDW-g3-LbC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DYi-fN-RzF">
+                        <barButtonItem key="rightBarButtonItem" id="l3x-qB-QbE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="yemeklerTableView" destination="bEf-fS-Dpb" id="GEF-Ja-RJe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="icF-03-RGh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="foG-kh-c8I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YOV-5l-aZR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CRa-4P-bVM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMW-rl-jU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cigkofte" width="1125" height="522"/>
+        <namedColor name="anaRenk">
+            <color red="1" green="0.57800000905990601" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
